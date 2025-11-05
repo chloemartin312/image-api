@@ -119,6 +119,8 @@ export class ImageApi extends DDDSuper(I18NMixin(LitElement)) {
 
   // Lit render the HTML
   render() {
+    if (!this.cards || this.cards.length === 0) return html`<p>Loading...</p>`;
+
     const card = this.cards[this.currentIndex];
     return html`
         <div class="card">
@@ -152,11 +154,15 @@ export class ImageApi extends DDDSuper(I18NMixin(LitElement)) {
         </div>`;
   }
 
+   // Lifecycle - first updated
+  firstUpdated() {
+    this.loadData();
+  }
+
    // Fetch data from API
   async loadData() {
     try {
-      const response = await fetch('/api/getData');
-      if (!response.ok) throw new Error('Failed to fetch user info');
+      const response = await fetch('/api/getData.js');
       const data = await response.json();
 
       // Initialize cards with like/dislike flags
@@ -226,11 +232,6 @@ export class ImageApi extends DDDSuper(I18NMixin(LitElement)) {
     if (this.currentIndex > 0) {
       this.currentIndex--;
     }
-  }
-
-  // Lifecycle - first updated
-  firstUpdated() {
-    this.loadData();
   }
   
   /**
