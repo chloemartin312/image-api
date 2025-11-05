@@ -1,0 +1,5 @@
+what is left to implement:
+    1. finsh JSON file (new pictures? make at least 50... womp womp)
+    2. light / dark mode 
+    3. mobile responsiveness
+    5. make it pretty!!! (and the design I WANT!)

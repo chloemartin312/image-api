@@ -1,0 +1,100 @@
+[{ "id":"1",
+    "dateTaken":"2025-10-17",
+    "photoSrc":"https://images.dog.ceo/breeds/retriever-chesapeake/n02099849_3565.jpg",
+    "author":{
+        "name":"Joe Cool",
+        "avatar":"https://picsum.photos/200",
+        "userSince":"2016-06-07",
+        "channel":"@joecoolio888"}
+},
+{
+    "id":"2",
+    "dateTaken":"2024-12-25",
+    "photoSrc":"https://images.dog.ceo/breeds/hound-walker/n02089867_880.jpg",
+    "author":{
+        "name":"Sally Smith",
+        "avatar":"https://picsum.photos/200",
+        "userSince":"2018-11-15",
+        "channel":"@sallysphotos"}
+},
+{
+    "id":"3",
+    "dateTaken":"2023-07-04",
+    "photoSrc":"https://images.dog.ceo/breeds/labradoodle/Cali.jpg",
+    "author":{
+        "name":"Mike Johnson",
+        "avatar":"https://picsum.photos/200",
+        "userSince":"2020-03-22",
+        "channel":"@yoyoitsmikey"}
+},
+{
+    "id":"4",
+    "dateTaken":"2022-02-14",
+    "photoSrc":"https://images.dog.ceo/breeds/terrier-silky/n02097658_3407.jpg",
+    "author":{
+        "name":"Emily Davis",
+        "avatar":"https://picsum.photos/200",
+        "userSince":"2019-08-30",
+        "channel":"@emilydphotos"}
+},
+{
+    "id":"5",
+    "dateTaken":"2021-09-10",
+    "photoSrc":"https://images.dog.ceo/breeds/cavapoo/lulu2.jpg",
+    "author":{
+        "name":"David Lee",
+        "avatar":"https://picsum.photos/200",
+        "userSince":"2017-05-12",
+        "channel":"@davidleeimages"}
+},
+{
+    "id":"6",
+    "dateTaken":"2020-11-23",
+    "photoSrc":"https://images.dog.ceo/breeds/bulldog-boston/n02096585_1525.jpg",
+    "author":{
+        "name":"Sophia Brown",
+        "avatar":"https://picsum.photos/200",
+        "userSince":"2021-01-19",
+        "channel":"@sophiabrownphotos"}
+},
+{
+    "id":"7",
+    "dateTaken":"2019-05-05",
+    "photoSrc":"https://images.dog.ceo/terrier-andalusian/El-Bodeguero-Andaluz-caracteristicas-de-un-perro-ratonero-perro-cuatro-patas_872f0926-e6bc-4916-913d-5a3156c6fba0_480x480.jpg",
+    "author":{
+        "name":"Chris Wilson",
+        "avatar":"https://picsum.photos/200",
+        "userSince":"2015-10-25",
+        "channel":"@chriswilsonpics"}
+},
+{
+    "id":"8",
+    "dateTaken":"2018-03-18",
+    "photoSrc":"https://images.dog.ceo/breeds/poodle-medium/PXL_20210220_100624962.jpg",
+    "author":{
+        "name":"Olivia Martinez",
+        "avatar":"https://picsum.photos/200",
+        "userSince":"2016-12-03",
+        "channel":"@oliviamphotos"}
+},
+{
+    "id":"9",
+    "dateTaken":"2017-08-29",
+    "photoSrc":"https://images.dog.ceo/breeds/kaninchen-dachshund-953699_640.jpg",
+    "author":{
+        "name":"James Anderson",
+        "avatar":"https://picsum.photos/200",
+        "userSince":"2014-07-14",
+        "channel":"@jamesandersonpics"}
+},
+{
+    "id":"10",
+    "dateTaken":"2016-01-12",
+    "photoSrc":"https://images.dog.ceo/breeds/",
+    "author":{
+        "name":"Isabella Taylor",
+        "avatar":"https://picsum.photos/200",
+        "userSince":"2013-09-09",
+        "channel":"@isabellataylorphotos"}
+}
+]
