@@ -1,100 +1,552 @@
-[{ "id":"1",
-    "dateTaken":"2025-10-17",
-    "photoSrc":"https://images.dog.ceo/breeds/retriever-chesapeake/n02099849_3565.jpg",
-    "author":{
-        "name":"Joe Cool",
-        "avatar":"https://picsum.photos/200",
-        "userSince":"2016-06-07",
-        "channel":"@joecoolio888"}
-},
-{
-    "id":"2",
-    "dateTaken":"2024-12-25",
-    "photoSrc":"https://images.dog.ceo/breeds/hound-walker/n02089867_880.jpg",
-    "author":{
-        "name":"Sally Smith",
-        "avatar":"https://picsum.photos/200",
-        "userSince":"2018-11-15",
-        "channel":"@sallysphotos"}
-},
-{
-    "id":"3",
-    "dateTaken":"2023-07-04",
-    "photoSrc":"https://images.dog.ceo/breeds/labradoodle/Cali.jpg",
-    "author":{
-        "name":"Mike Johnson",
-        "avatar":"https://picsum.photos/200",
-        "userSince":"2020-03-22",
-        "channel":"@yoyoitsmikey"}
-},
-{
-    "id":"4",
-    "dateTaken":"2022-02-14",
-    "photoSrc":"https://images.dog.ceo/breeds/terrier-silky/n02097658_3407.jpg",
-    "author":{
-        "name":"Emily Davis",
-        "avatar":"https://picsum.photos/200",
-        "userSince":"2019-08-30",
-        "channel":"@emilydphotos"}
-},
-{
-    "id":"5",
-    "dateTaken":"2021-09-10",
-    "photoSrc":"https://images.dog.ceo/breeds/cavapoo/lulu2.jpg",
-    "author":{
-        "name":"David Lee",
-        "avatar":"https://picsum.photos/200",
-        "userSince":"2017-05-12",
-        "channel":"@davidleeimages"}
-},
-{
-    "id":"6",
-    "dateTaken":"2020-11-23",
-    "photoSrc":"https://images.dog.ceo/breeds/bulldog-boston/n02096585_1525.jpg",
-    "author":{
-        "name":"Sophia Brown",
-        "avatar":"https://picsum.photos/200",
-        "userSince":"2021-01-19",
-        "channel":"@sophiabrownphotos"}
-},
-{
-    "id":"7",
-    "dateTaken":"2019-05-05",
-    "photoSrc":"https://images.dog.ceo/terrier-andalusian/El-Bodeguero-Andaluz-caracteristicas-de-un-perro-ratonero-perro-cuatro-patas_872f0926-e6bc-4916-913d-5a3156c6fba0_480x480.jpg",
-    "author":{
-        "name":"Chris Wilson",
-        "avatar":"https://picsum.photos/200",
-        "userSince":"2015-10-25",
-        "channel":"@chriswilsonpics"}
-},
-{
-    "id":"8",
-    "dateTaken":"2018-03-18",
-    "photoSrc":"https://images.dog.ceo/breeds/poodle-medium/PXL_20210220_100624962.jpg",
-    "author":{
-        "name":"Olivia Martinez",
-        "avatar":"https://picsum.photos/200",
-        "userSince":"2016-12-03",
-        "channel":"@oliviamphotos"}
-},
-{
-    "id":"9",
-    "dateTaken":"2017-08-29",
-    "photoSrc":"https://images.dog.ceo/breeds/kaninchen-dachshund-953699_640.jpg",
-    "author":{
-        "name":"James Anderson",
-        "avatar":"https://picsum.photos/200",
-        "userSince":"2014-07-14",
-        "channel":"@jamesandersonpics"}
-},
-{
-    "id":"10",
-    "dateTaken":"2016-01-12",
-    "photoSrc":"https://images.dog.ceo/breeds/",
-    "author":{
-        "name":"Isabella Taylor",
-        "avatar":"https://picsum.photos/200",
-        "userSince":"2013-09-09",
-        "channel":"@isabellataylorphotos"}
-}
+[
+  {
+    "id": "1",
+    "dateTaken": "2025-10-17",
+    "photoSrc": "https://images.dog.ceo/breeds/retriever-chesapeake/n02099849_3565.jpg",
+    "author": {
+      "name": "Joe Cool",
+      "avatar": "https://picsum.photos/id/64/200/200",
+      "userSince": "2016-06-07",
+      "channel": "@joecoolio888"
+    }
+  },
+  {
+    "id": "2",
+    "dateTaken": "2024-12-25",
+    "photoSrc": "https://images.dog.ceo/breeds/hound-walker/n02089867_880.jpg",
+    "author": {
+      "name": "Sally Sass",
+      "avatar": "https://picsum.photos/id/91/200/200",
+      "userSince": "2018-11-15",
+      "channel": "@sallysass1001"
+    }
+  },
+  {
+    "id": "3",
+    "dateTaken": "2023-07-04",
+    "photoSrc": "https://images.dog.ceo/breeds/labradoodle/Cali.jpg",
+    "author": {
+      "name": "Mike Mikey",
+      "avatar": "https://picsum.photos/id/177/200/200",
+      "userSince": "2020-03-22",
+      "channel": "@yoyoitsmikey"
+    }
+  },
+  {
+    "id": "4",
+    "dateTaken": "2022-02-14",
+    "photoSrc": "https://images.dog.ceo/breeds/terrier-silky/n02097658_3407.jpg",
+    "author": {
+      "name": "Elizabeth Taylor",
+      "avatar": "https://picsum.photos/id/203/200/200",
+      "userSince": "2019-08-30",
+      "channel": "@elizabethtaylortheicon"
+    }
+  },
+  {
+    "id": "5",
+    "dateTaken": "2021-09-10",
+    "photoSrc": "https://images.dog.ceo/breeds/cavapoo/lulu2.jpg",
+    "author": {
+      "name": "David Lee",
+      "avatar": "https://picsum.photos/id/338/200/200",
+      "userSince": "2017-05-12",
+      "channel": "@davidleeeweee"
+    }
+  },
+  {
+    "id": "6",
+    "dateTaken": "2020-11-23",
+    "photoSrc": "https://images.dog.ceo/breeds/bulldog-boston/n02096585_1525.jpg",
+    "author": {
+      "name": "Charlie Brown",
+      "avatar": "https://picsum.photos/id/433/200/200",
+      "userSince": "2021-01-19",
+      "channel": "@peanutsINC"
+    }
+  },
+  {
+    "id": "7",
+    "dateTaken": "2019-05-05",
+    "photoSrc": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_3582.jpg",
+    "author": {
+      "name": "Chris Wilson",
+      "avatar": "https://picsum.photos/id/577/200/200",
+      "userSince": "2015-10-25",
+      "channel": "@ballerchrisw"
+    }
+  },
+  {
+    "id": "8",
+    "dateTaken": "2018-03-18",
+    "photoSrc": "https://images.dog.ceo/breeds/poodle-medium/PXL_20210220_100624962.jpg",
+    "author": {
+      "name": "Olivia Martinez",
+      "avatar": "https://picsum.photos/id/646/200/200",
+      "userSince": "2016-12-03",
+      "channel": "@heyitsolivia"
+    }
+  },
+  {
+    "id": "9",
+    "dateTaken": "2017-08-29",
+    "photoSrc": "https://images.dog.ceo/breeds/labradoodle/labradoodle-forrest.jpg",
+    "author": {
+      "name": "James Anderson",
+      "avatar": "https://picsum.photos/id/717/200/200",
+      "userSince": "2014-07-14",
+      "channel": "@itsmeJA"
+    }
+  },
+  {
+    "id": "10",
+    "dateTaken": "2016-01-12",
+    "photoSrc": "https://images.dog.ceo/breeds/husky/n02110185_10116.jpg",
+    "author": {
+      "name": "Clara Bow",
+      "avatar": "https://picsum.photos/id/823/200/200",
+      "userSince": "2013-09-09",
+      "channel": "@clarabowttpd"
+    }
+  },
+  {
+    "id": "11",
+    "dateTaken": "2025-05-30",
+    "photoSrc": "https://images.dog.ceo/breeds/borzoi/n02090622_7905.jpg",
+    "author": {
+      "name": "Liam Harris",
+      "avatar": "https://picsum.photos/id/866/200/200",
+      "userSince": "2022-04-11",
+      "channel": "@liamharrisphotos"
+    }
+  },
+  {
+    "id": "12",
+    "dateTaken": "2024-10-09",
+    "photoSrc": "https://images.dog.ceo/breeds/terrier-westhighland/n02098286_1224.jpg",
+    "author": {
+      "name": "Mia Clark",
+      "avatar": "https://picsum.photos/id/944/200/200",
+      "userSince": "2020-06-21",
+      "channel": "@miaclarkpics"
+    }
+  },
+  {
+    "id": "13",
+    "dateTaken": "2023-12-15",
+    "photoSrc": "https://images.dog.ceo/breeds/coonhound/n02089078_324.jpg",
+    "author": {
+      "name": "Noah Robinson",
+      "avatar": "https://picsum.photos/id/1011/200/200",
+      "userSince": "2019-02-28",
+      "channel": "@noahrobinsonphotos"
+    }
+  },
+  {
+    "id": "14",
+    "dateTaken": "2022-06-01",
+    "photoSrc": "https://images.dog.ceo/breeds/gaddi-indian/Gaddi.jpg",
+    "author": {
+      "name": "Beyonce",
+      "avatar": "https://picsum.photos/id/1025/200/200",
+      "userSince": "2018-05-16",
+      "channel": "@itsbeyonceduh"
+    }
+  },
+  {
+    "id": "15",
+    "dateTaken": "2021-04-20",
+    "photoSrc": "https://images.dog.ceo/breeds/chow/n02112137_6808.jpg",
+    "author": {
+      "name": "Steve",
+      "avatar": "https://picsum.photos/id/1027/200/200",
+      "userSince": "2017-11-08",
+      "channel": "@swagsteve"
+    }
+  },
+  {
+    "id": "16",
+    "dateTaken": "2020-09-14",
+    "photoSrc": "https://images.dog.ceo/breeds/pug/n02110958_12860.jpg",
+    "author": {
+      "name": "Burger King",
+      "avatar": "https://picsum.photos/id/1031/200/200",
+      "userSince": "2016-08-23",
+      "channel": "@burgerkingoffical"
+    }
+  },
+  {
+    "id": "17",
+    "dateTaken": "2019-11-11",
+    "photoSrc": "https://images.dog.ceo/breeds/doberman/n02107142_18413.jpg",
+    "author": {
+      "name": "George Washington",
+      "avatar": "https://picsum.photos/id/1040/200/200",
+      "userSince": "2015-03-05",
+      "channel": "@iwasthefirstpresident"
+    }
+  },
+  {
+    "id": "18",
+    "dateTaken": "2018-07-22",
+    "photoSrc": "https://images.dog.ceo/breeds/appenzeller/n02107908_5002.jpg",
+    "author": {
+      "name": "Isabella Green",
+      "avatar": "https://picsum.photos/id/1043/200/200",
+      "userSince": "2014-12-19",
+      "channel": "@isabellagreenpics"
+    }
+  },
+  {
+    "id": "19",
+    "dateTaken": "2017-02-28",
+    "photoSrc": "https://images.dog.ceo/breeds/coonhound/n02089078_825.jpg",
+    "author": {
+      "name": "Ben Franklin",
+      "avatar": "https://picsum.photos/id/1047/200/200",
+      "userSince": "2013-06-30",
+      "channel": "@likelowkeyben"
+    }
+  },
+  {
+    "id": "20",
+    "dateTaken": "2016-10-05",
+    "photoSrc": "https://images.dog.ceo/breeds/malamute/n02110063_15949.jpg",
+    "author": {
+      "name": "Charlotte Adams",
+      "avatar": "https://picsum.photos/id/1050/200/200",
+      "userSince": "2012-11-12",
+      "channel": "@charlotteadamspics"
+    }
+  },
+  {
+    "id": "21",
+    "dateTaken": "2025-03-14",
+    "photoSrc": "https://images.dog.ceo/breeds/australian-shepherd/forest.jpg",
+    "author": {
+      "name": "Benjamin Nelson",
+      "avatar": "https://picsum.photos/id/1062/200/200",
+      "userSince": "2021-09-27",
+      "channel": "@THEbenjaminnelson"
+    }
+  },
+  {
+    "id": "22",
+    "dateTaken": "2024-08-19",
+    "photoSrc": "https://images.dog.ceo/breeds/poodle-toy/n02113624_3808.jpg",
+    "author": {
+      "name": "Taylor Swift",
+      "avatar": "https://picsum.photos/id/1074/200/200",
+      "userSince": "2019-04-14",
+      "channel": "@taylorswift"
+    }
+  },
+  {
+    "id": "23",
+    "dateTaken": "2023-11-02",
+    "photoSrc": "https://images.dog.ceo/breeds/mix/Annabelle11.jpg",
+    "author": {
+      "name": "Elijah Mitchell",
+      "avatar": "https://picsum.photos/id/1080/200/200",
+      "userSince": "2018-10-08",
+      "channel": "@elijahmitchellphotos"
+    }
+  },
+  {
+    "id": "24",
+    "dateTaken": "2022-01-25",
+    "photoSrc": "https://images.dog.ceo/breeds/poodle-toy/n02113624_3864.jpg",
+    "author": {
+      "name": "Harper Perez",
+      "avatar": "https://picsum.photos/id/119/200/200",
+      "userSince": "2017-07-19",
+      "channel": "@harperperezpics"
+    }
+  },
+  {
+    "id": "25",
+    "dateTaken": "2021-06-30",
+    "photoSrc": "https://images.dog.ceo/breeds/beagle/n02088364_12131.jpg",
+    "author": {
+      "name": "Alexander Roberts",
+      "avatar": "https://picsum.photos/id/129/200/200",
+      "userSince": "2016-02-11",
+      "channel": "@alexanderrobertsphotos"
+    }
+  },
+  {
+    "id": "26",
+    "dateTaken": "2023-08-10",
+    "photoSrc": "https://images.dog.ceo/breeds/cattledog-australian/IMG_3469.jpg",
+    "author": {
+      "name": "Monica Jam",
+      "avatar": "https://picsum.photos/id/134/200/200",
+      "userSince": "2016-02-11",
+      "channel": "@monicajamandjelly"
+    }
+  },
+  {
+    "id": "27",
+    "dateTaken": "2022-12-01",
+    "photoSrc": "https://images.dog.ceo/breeds/cattledog-australian/IMG_4379.jpg",
+    "author": {
+      "name": "Tommy Lee",
+      "avatar": "https://picsum.photos/id/146/200/200",
+      "userSince": "2016-02-11",
+      "channel": "@tommylee88"
+    }
+  },
+  {
+    "id": "28",
+    "dateTaken": "2021-03-15",
+    "photoSrc": "https://images.dog.ceo/breeds/pembroke/n02113023_3687.jpg",
+    "author": {
+      "name": "Cindy White",
+      "avatar": "https://picsum.photos/id/152/200/200",
+      "userSince": "2016-02-11",
+      "channel": "@cindywhitephotos"
+    }
+  },
+  {
+    "id": "29",
+    "dateTaken": "2020-07-22",
+    "photoSrc": "https://images.dog.ceo/breeds/finnish-lapphund/mochilamvan.jpg",
+    "author": {
+      "name": "Gary Black",
+      "avatar": "https://picsum.photos/id/160/200/200",
+      "userSince": "2016-02-11",
+      "channel": "@garyblackpics"
+    }
+  },
+  {
+    "id": "30",
+    "dateTaken": "2019-11-30",
+    "photoSrc": "https://images.dog.ceo/breeds/bulldog-boston/n02096585_2108.jpg",
+    "author": {
+      "name": "Linda Pumpkin",
+      "avatar": "https://picsum.photos/id/169/200/200",
+      "userSince": "2016-02-11",
+      "channel": "@iampumpkinlinda"
+    }
+  },
+  {
+    "id": "31",
+    "dateTaken": "2018-04-18",
+    "photoSrc": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_1727.jpg",
+    "author": {
+      "name": "Frank Silver",
+      "avatar": "https://picsum.photos/id/176/200/200",
+      "userSince": "2016-02-11",
+      "channel": "@itsyoboifrank"
+    }
+  },
+  {
+    "id": "32",
+    "dateTaken": "2017-09-05",
+    "photoSrc": "https://images.dog.ceo/breeds/pointer-germanlonghair/hans4.jpg",
+    "author": {
+      "name": "Diana Copper",
+      "avatar": "https://picsum.photos/id/180/200/200",
+      "userSince": "2016-02-11",
+      "channel": "@whateveritsdiana"
+    }
+  },
+  {
+    "id": "33",
+    "dateTaken": "2016-12-22",
+    "photoSrc": "https://images.dog.ceo/breeds/malinois/n02105162_5489.jpg",
+    "author": {
+      "name": "Samuel Bronze",
+      "avatar": "https://picsum.photos/id/188/200/200",
+      "userSince": "2016-02-11",
+      "channel": "@samuelbronzephotos"
+    }
+  },
+  {
+    "id": "34",
+    "dateTaken": "2015-05-14",
+    "photoSrc": "https://images.dog.ceo/breeds/springer-english/n02102040_3260.jpg",
+    "author": {
+      "name": "Natalie Copperfield",
+      "avatar": "https://picsum.photos/id/196/200/200",
+      "userSince": "2016-02-11",
+      "channel": "@coolusername123"
+    }
+  },
+  {
+    "id": "35",
+    "dateTaken": "2014-10-29",
+    "photoSrc": "https://images.dog.ceo/breeds/bulldog-boston/n02096585_11476.jpg",
+    "author": {
+      "name": "Patrick Iron",
+      "avatar": "https://picsum.photos/id/200/200/200",
+      "userSince": "2016-02-11",
+      "channel": "@patrickironphotos"
+    }
+  },
+  {
+    "id": "36",
+    "dateTaken": "2013-03-03",
+    "photoSrc": "https://images.dog.ceo/breeds/whippet/n02091134_125.jpg",
+    "author": {
+      "name": "Victoria Steel",
+      "avatar": "https://picsum.photos/id/206/200/200",
+      "userSince": "2016-02-11",
+      "channel": "@victoriasteel"
+    }
+  },
+  {
+    "id": "37",
+    "dateTaken": "2012-08-21",
+    "photoSrc": "https://images.dog.ceo/breeds/pembroke/n02113023_4285.jpg",
+    "author": {
+      "name": "Andrew Stone",
+      "avatar": "https://picsum.photos/id/219/200/200",
+      "userSince": "2016-02-11",
+      "channel": "@user485954920"
+    }
+  },
+  {
+    "id": "38",
+    "dateTaken": "2011-02-10",
+    "photoSrc": "https://images.dog.ceo/breeds/poodle-medium/WhatsApp_Image_2022-08-06_at_4.48.38_PM.jpg",
+    "author": {
+      "name": "Betty Quartz",
+      "avatar": "https://picsum.photos/id/225/200/200",
+      "userSince": "2016-02-11",
+      "channel": "@bettyquartzphotos"
+    }
+  },
+  {
+    "id": "39",
+    "dateTaken": "2010-11-17",
+    "photoSrc": "https://images.dog.ceo/breeds/terrier-irish/n02093991_3234.jpg",
+    "author": {
+      "name": "Carl Onyx",
+      "avatar": "https://picsum.photos/id/237/200/200",
+      "userSince": "2016-02-11",
+      "channel": "@carlonyxpics"
+    }
+  },
+  {
+    "id": "40",
+    "dateTaken": "2009-06-04",
+    "photoSrc": "https://images.dog.ceo/breeds/mountain-swiss/n02107574_2998.jpg",
+    "author": {
+      "name": "Donna Silverman",
+      "avatar": "https://picsum.photos/id/240/200/200",
+      "userSince": "2016-02-11",
+      "channel": "@donnasilvermanphotos"
+    }
+  },
+  {
+    "id": "41",
+    "dateTaken": "2008-05-25",
+    "photoSrc": "https://images.dog.ceo/breeds/waterdog-spanish/20180706_194432.jpg",
+    "author": {
+      "name": "Edward Goldstein",
+      "avatar": "https://picsum.photos/id/250/200/200",
+      "userSince": "2016-02-11",
+      "channel": "@edwardgoldsteinphotos"
+    }
+  },
+  {
+    "id": "42",
+    "dateTaken": "2007-04-16",
+    "photoSrc": "https://images.dog.ceo/breeds/terrier-border/n02093754_4721.jpg",
+    "author": {
+      "name": "Fiona Brass",
+      "avatar": "https://picsum.photos/id/257/200/200",
+      "userSince": "2016-02-11",
+      "channel": "@fionabrassphotos"
+    }
+  },
+  {
+    "id": "43",
+    "dateTaken": "2006-03-08",
+    "photoSrc": "https://images.dog.ceo/breeds/puggle/IMG_041234.jpg",
+    "author": {
+      "name": "George Tin",
+      "avatar": "https://picsum.photos/id/274/200/200",
+      "userSince": "2016-02-11",
+      "channel": "@georgetinphotos"
+    }
+  },
+  {
+    "id": "44",
+    "dateTaken": "2005-01-20",
+    "photoSrc": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_774.jpg",
+    "author": {
+      "name": "Hannah Silver",
+      "avatar": "https://picsum.photos/id/287/200/200",
+      "userSince": "2016-02-11",
+      "channel": "@hannahsilverpics"
+    }
+  },
+  {
+    "id": "45",
+    "dateTaken": "2004-09-12",
+    "photoSrc": "https://images.dog.ceo/breeds/cattledog-australian/IMG_5481.jpg",
+    "author": {
+      "name": "Ian Mercury",
+      "avatar": "https://picsum.photos/id/292/200/200",
+      "userSince": "2016-02-11",
+      "channel": "@ianmercuryphotos"
+    }
+  },
+  {
+    "id": "46",
+    "dateTaken": "2003-07-18",
+    "photoSrc": "https://images.dog.ceo/breeds/pyrenees/n02111500_3306.jpg",
+    "author": {
+      "name": "Jane Nickel",
+      "avatar": "https://picsum.photos/id/306/200/200",
+      "userSince": "2016-02-11",
+      "channel": "@nickeljane"
+    }
+  },
+  {
+    "id": "47",
+    "dateTaken": "2002-04-02",
+    "photoSrc": "https://images.dog.ceo/breeds/terrier-boston/bostonTerrier_000003.jpg",
+    "author": {
+      "name": "Kevin Copper",
+      "avatar": "https://picsum.photos/id/319/200/200",
+      "userSince": "2016-02-11",
+      "channel": "@kcopper527"
+    }
+  },
+  {
+    "id": "48",
+    "dateTaken": "2001-09-09",
+    "photoSrc": "https://images.dog.ceo/breeds/pinscher-miniature/n02107312_6003.jpg",
+    "author": {
+      "name": "Laura Platinum",
+      "avatar": "https://picsum.photos/id/326/200/200",
+      "userSince": "2016-02-11",
+      "channel": "@iamplatinum"
+    }
+  },
+  {
+    "id": "49",
+    "dateTaken": "2000-06-15",
+    "photoSrc": "https://images.dog.ceo/breeds/affenpinscher/n02110627_3972.jpg",
+    "author": {
+      "name": "Mason Storm",
+      "avatar": "https://picsum.photos/id/342/200/200",
+      "userSince": "2016-02-11",
+      "channel": "@ihatestorms"
+    }
+  },
+  {
+    "id": "50",
+    "dateTaken": "2000-06-15",
+    "photoSrc": "https://images.dog.ceo/breeds/redbone/n02090379_3943.jpg",
+    "author": {
+      "name": "Lily Breeze",
+      "avatar": "https://picsum.photos/id/349/200/200",
+      "userSince": "2016-02-11",
+      "channel": "@breeeeeeeeezey"
+    }
+  }
 ]

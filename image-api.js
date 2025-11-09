@@ -22,7 +22,6 @@ export class ImageApi extends DDDSuper(I18NMixin(LitElement)) {
     super();
     this.cards = [];
     this.loadedCount = 10;
-    this.copied = false;
   }
 
   // Lit reactive properties
@@ -31,7 +30,6 @@ export class ImageApi extends DDDSuper(I18NMixin(LitElement)) {
       ...super.properties,
       cards: { type: Array },
       loadedCount: { type: Number },
-      copied: { type: Boolean },
     };
   }
 
@@ -42,8 +40,24 @@ export class ImageApi extends DDDSuper(I18NMixin(LitElement)) {
       :host {
         display: block;
         padding: 1rem;
-        background-color: var(--ddd-theme-default-shrineTan);
+        background-color: var(--bg-color);
         font-family: var(--ddd-font-secondary);
+      }
+
+      /* Light Theme */
+      :host {
+        --bg-color: var(--ddd-theme-default-shrineTan);
+        --text-color: var(--ddd-theme-default-landgrantBrown);
+        --card-bg: var(--ddd-theme-default-alertImmediate);
+      }
+
+      /* Dark Theme */
+      @media(prefers-color-scheme: dark) {
+        :host {
+          --bg-color: var(--ddd-theme-default-wonderPurple);
+          --text-color: var(--ddd-theme-default-potential70);
+          --card-bg: var(--ddd-theme-default-athertonViolet);
+        }
       }
 
       .grid {
@@ -54,16 +68,16 @@ export class ImageApi extends DDDSuper(I18NMixin(LitElement)) {
       }
 
       .card {
-        border: 4px solid var(--ddd-theme-default-landgrantBrown);
-        background-color: #FFC3CC;
+        border: 2px solid var(--text-color);
+        background-color: var(--card-bg);
         border-radius: 12px;
-        padding: 1rem;
-        color: var(--ddd-theme-default-landgrantBrown);
+        padding: 0.75rem;
+        color: var(--text-color);
+        text-align: center;
       }
 
       .author-info {
-        text-align: center;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
       }
 
       .author-info img {
@@ -74,7 +88,8 @@ export class ImageApi extends DDDSuper(I18NMixin(LitElement)) {
 
       .card > img {
         width: 100%;
-        height: auto;
+        height: 300px;
+        object-fit: cover;
         border-radius: 8px;
         margin: 0.5rem 0;
       }
@@ -82,7 +97,7 @@ export class ImageApi extends DDDSuper(I18NMixin(LitElement)) {
       button {
         margin: 0.5rem;
         padding: 0.5rem 1rem;
-        background-color: var(--ddd-theme-default-landgrantBrown);
+        background-color: var(--text-color);
         color: white;
         border: none;
         border-radius: 8px;
@@ -95,17 +110,19 @@ export class ImageApi extends DDDSuper(I18NMixin(LitElement)) {
 
       button[active] {
         transform: scale(1.1);
+        background-color: var(--bg-color);
       }
 
       .actions {
         display: flex;
-        align-items: center;
+        justify-content: center;
         gap: 1rem;
         margin: 1rem 0;
       }
 
-      .share {
-        text-align: center;
+      .sentinel {
+        height: 1px;
+        visibility: hidden;
       }
     `];
   }
@@ -131,54 +148,70 @@ export class ImageApi extends DDDSuper(I18NMixin(LitElement)) {
             <p>Date taken: ${card.dateTaken || 'Unknown'}</p>
 
             <div class="actions">
-              <button @click="${() => this.toggleLike(card.id, true)}" ?active="${card.isLiked}">🩷</button>
-              <button @click="${() => this.toggleLike(card.id, false)}" ?active="${card.isDisliked}">👎</button>
+              <button @click="${() => this.toggleLike(card.id, true)}" ?active="${card.isLiked}">🩷 Like</button>
+              <button @click="${() => this.toggleLike(card.id, false)}" ?active="${card.isDisliked}">👎 Dislike</button>
             </div>
 
             <div class="share">
               <button @click="${() => this.copyShareLink(card.id)}">
-                ${this.copied ? 'Copied!' : 'Copy Share Link'}
+                ${card.copied ? 'Copied!' : 'Copy Share Link'}
               </button>
             </div>
 
           </div>
         `)}
       </div>
-      <div id="sentinel"></div>
+      <div class="sentinel"></div>
     `;
   }
 
    // Lifecycle - first updated
   firstUpdated() {
     this.loadData();
-
-    // Infinite scroll observer
-    new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting && this.loadedCount < this.cards.length) {
-        this.loadedCount = Math.min(this.loadedCount + 10, this.cards.length);
-      }
-    }, { rootMargin: '200px' }).observe(this.shadowRoot.querySelector('#sentinel'));
   }
 
    // Fetch data from API
   async loadData() {
     try {
-      // Get data
       const response = await fetch('/api/getData.js');
       const data = await response.json();
 
-      // Load saved likes
       const saved = JSON.parse(localStorage.getItem('likes') || '{}');
       
-      // Initialize cards with like/dislike fields
       this.cards = data.map(item => ({
         ...item,
         isLiked: saved[item.id]?.isLiked || false,
         isDisliked: saved[item.id]?.isDisliked || false,
+        copied: false,
       }));
+
+      await this.updateComplete;
+      this.setupIntersectionObserver();
     } catch (error) {
       console.error('Error loading data:', error);
     }
+  }
+
+  // Set up intersection observer
+  setupIntersectionObserver() {
+    const sentinelElement = this.shadowRoot.querySelector('.sentinel');
+    console.log('Sentinel element found?', sentinelElement);
+    console.log('Total cards:', this.cards.length);
+    console.log('Currently showing:', this.loadedCount);
+
+    if (!sentinelElement) {
+      console.error('Sentinel not found!');
+      return;
+    }
+
+    new IntersectionObserver(([entry]) => {
+      console.log('Observer triggered! isIntersecting:', entry.isIntersecting);
+      if (entry.isIntersecting && this.loadedCount < this.cards.length) {
+        console.log('Loading more! Old count:', this.loadedCount);
+        this.loadedCount = Math.min(this.loadedCount + 10, this.cards.length);
+        console.log('New count:', this.loadedCount);
+      }
+    }, { rootMargin: '200px' }).observe(sentinelElement);
   }
 
   // Like/dislike logic
@@ -202,8 +235,15 @@ export class ImageApi extends DDDSuper(I18NMixin(LitElement)) {
     const url = `${window.location.origin}${window.location.pathname}?photo=${id}`;
     try {
       await navigator.clipboard.writeText(url);
-      this.copied = true;
-      setTimeout(() => (this.copied = false), 1500);
+      this.cards = this.cards.map(c =>
+        c.id === id ? { ...c, copied: true } : c
+      );
+      
+      setTimeout(() => {
+        this.cards = this.cards.map(c =>
+          c.id === id ? { ...c, copied: false } : c
+        );
+      }, 1500);
     } catch (err) {
       console.error("Clipboard copy failed", err);
     }
